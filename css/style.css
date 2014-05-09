@@ -854,6 +854,11 @@ a.instagram:hover {
 	line-height: 1.1;
 	text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
+
+.jumbotron .sub-heading {
+    font-weight: bold;
+}
+
 .jumbotron .info {
 	margin: 30px auto 0;
 	-webkit-box-sizing:border-box;
