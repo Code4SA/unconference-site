@@ -26,12 +26,12 @@ a {
 	outline: 0;
 }
 a:hover {
-	color: #EF7247;
+	color: #1fb9ea;
 	text-decoration: none;
 }
 h1, h2 {
 	color: inherit;
-	font-family: 'Roboto Slab Bold';
+	font-family: 'Open Sans';
 	font-weight: bold;
 	line-height: 40px;
 	margin: 5px 0 20px;
@@ -40,10 +40,20 @@ h1, h2 {
 ul {
 	list-style-type: none;
 }
+
+ul.bullets {list-style-type: square;
+}
+
+ul.bullets li {padding-bottom: 10px;
+}
+
 sup {
 	padding: 0 0 0 1px;
 	text-transform: none;
 }
+
+.highlight-blue {color: #1fb9ea;}
+.highlight-red {color: #ff0054;}
 /* Buttons */
 .btn {
 	border: none;
@@ -55,6 +65,7 @@ sup {
 	background: #48A3A6;
 	color: white;
 	font-size: 16.5px;
+	font-weight: bold;
 	text-decoration: none;
 	text-shadow: none;
 	-webkit-box-shadow: none;
@@ -93,10 +104,10 @@ sup {
 	padding: 12px 19px 14px;
 }
 .btn.btn-primary {
-	background-color: #EF7247;
+	background-color: #1fc0ed;
 }
 .btn.btn-primary:hover, .btn.btn-primary:focus {
-	background-color: #ff9966;
+	background-color: #ff0054;
 }
 .btn.btn-primary:active, .btn.btn-primary.active {
 	background-color: #3d4e58;
@@ -163,11 +174,11 @@ sup {
 }
 .btn.btn-link:hover, .btn.btn-link:focus {
 	background-color: none;
-	color: #EF7247;
+	color: #1fb9ea;
 }
 .btn.btn-link:active, .btn.btn-link.active {
 	background-color: none;
-	color: #EF7247;
+	color: #1fb9ea;
 }
 .btn.btn-inverse {
   background-color: #393E46;
@@ -206,7 +217,7 @@ sup {
 	box-shadow: 0 0 0;
 }
 .navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
-	background-color: #48A3A6;
+	background-color: #1fc0ed;
 	color: #FFFFFF;
 }
 /* Forms */
@@ -246,8 +257,9 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .top-bar {
 	background: #ffffff;
 	box-shadow: none;
-	height: 0;
+
 }
+
 .top-bar:before, .top-bar:after {
 	content: "\0020";
 	display: block;
@@ -328,7 +340,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 }
 .top-bar .navbar .nav > li > a:hover, .top-bar.alt .navbar .nav > li > a:hover {
 	color: #FFFFFF;
-	background: #48A3A6 !important;
+	background: #34b5de !important;
 }
 .top-bar .navbar .nav > li > a:focus, .top-bar.alt .navbar .nav > li > a:focus {
 	outline: 0;
@@ -394,7 +406,7 @@ nav select {
 	margin: 0 auto;
 	padding: 0;
 }
-#about, #register, #speakers, #schedule, #workshops, #venue, #sponsors, #news, #twitter-feed, #contact, #newsletter {
+#about, #register, #why, #schedule, #workshops, #venue, #sponsors, #news, #twitter-feed, #contact, #newsletter {
 	padding: 100px 0 150px;
 	-webkit-box-shadow: 0 5px 0 rgba(30, 38, 44, 0.2) inset;
 	-moz-box-shadow: 0 5px 0 rgba(30, 38, 44, 0.2) inset;
@@ -411,8 +423,8 @@ nav select {
 	background-size: cover;
 	padding: 60px 0;
 }
-#speakers {
-	background: #EF7247;
+#why {
+	background: #1fc0ed;
 }
 #schedule {
 	background: #E7EBED;
@@ -435,7 +447,7 @@ nav select {
 	background: #E7EBED;
 }
 #news {
-	background: #EF7247;
+	background: #1fb9ea;
 }
 #twitter-feed {
 	background: #E7EBED;
@@ -454,7 +466,7 @@ nav select {
 	padding: 0;
 }
 footer {
-	background-color: #2C3840;
+	background-color: #1fb9ea;
 	color: #E1E4E5;
 	font-size: 14px;
 	font-weight: 100;
@@ -464,6 +476,8 @@ footer {
 footer img {
 	margin: 10px 0 15px;
 }
+
+footer a {color: #ff0054;}
 /*  -----------------------------------------------------   /*
 	DIVIDERS, HEADERS & SUBHEADERS
 /*  -----------------------------------------------------   /*
@@ -522,7 +536,7 @@ hr.divider-short {
 }
 .module-header h4 {
 	background-color: rgba(0, 0, 0, 0);
-	color: rgba(0, 0, 0, 0.4);
+	color: #ff0054;
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 700 !important;
@@ -583,6 +597,7 @@ hr.divider-short {
 	font-size: 18.5px;
 	font-weight: 400;
 	margin: 0 0 15px;
+	line-height:1.4em;
 }
 /* Box */
 .box {
@@ -602,6 +617,8 @@ hr.divider-short {
 .white {
 	color: #ffffff;
 }
+
+.white a {color: #ff0054;}
 /* Icon Containers */
 .icon-wrap {
 	background: none repeat scroll 0 0 #FFFFFF;
@@ -628,7 +645,7 @@ hr.divider-short {
 	background: #48A3A6;
 }
 .icon-wrap.color2 {
-	background: #EF7247;
+	background: #1fb9ea;
 }
 .icon-wrap.color3 {
 	background: #F2BC47;
@@ -812,12 +829,13 @@ a.instagram:hover {
 	width: 100%;
 }
 .jumbotron h1 {
-	font-size: 100px;
-	font-weight: 800;
+	font-size: 60px;
+	font-weight: 700;
 	line-height: 1;
 	margin: 10px 0 20px;
-	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 	text-transform: none;
+	text-transform: uppercase;
 }
 .jumbotron h2 {
 	font-size: 60px;
@@ -842,9 +860,9 @@ a.instagram:hover {
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
 	background: transparent;
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: 700;
-	letter-spacing: 4px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 .jumbotron .days, .jumbotron .month, .jumbotron .year, .jumbotron .location {
@@ -1380,7 +1398,7 @@ a.instagram:hover {
 	margin: 0 !important;
 }
 .nav-pills > li > a:hover, .nav-pills > li > a:focus {
-	background-color: #E27249;
+	background-color: #ff0054;
 }
 .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
 	background-color: #2C3840;
@@ -1487,14 +1505,14 @@ a.instagram:hover {
 	transition: all 0.4s ease-in-out;
 }
 .timeline-icon-container {
-	background: #EF7247; /* Old browsers */
-	/*background: -moz-linear-gradient(top, #EFEFEF 1%, #EF7247 100%); /* FF3.6+ */
-	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #EFEFEF), color-stop(100%, #EF7247)); /* Chrome,Safari4+ */
-	/*background: -webkit-linear-gradient(top, #EFEFEF 1%, #EF7247 100%); /* Chrome10+,Safari5.1+ */
-	/*background: -o-linear-gradient(top, #EFEFEF 1%, #EF7247 100%); /* Opera 11.10+ */
-	/*background: -ms-linear-gradient(top, #EFEFEF 1%, #EF7247 100%); /* IE10+ */
-	/*background: linear-gradient(to bottom, #EFEFEF 1%, #EF7247 100%); /* W3C */
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EFEFEF', endColorstr='#EF7247', GradientType=0 ); /* IE6-9 */
+	background: #1fb9ea; /* Old browsers */
+	/*background: -moz-linear-gradient(top, #EFEFEF 1%, #1fb9ea 100%); /* FF3.6+ */
+	/*background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #EFEFEF), color-stop(100%, #1fb9ea)); /* Chrome,Safari4+ */
+	/*background: -webkit-linear-gradient(top, #EFEFEF 1%, #1fb9ea 100%); /* Chrome10+,Safari5.1+ */
+	/*background: -o-linear-gradient(top, #EFEFEF 1%, #1fb9ea 100%); /* Opera 11.10+ */
+	/*background: -ms-linear-gradient(top, #EFEFEF 1%, #1fb9ea 100%); /* IE10+ */
+	/*background: linear-gradient(to bottom, #EFEFEF 1%, #1fb9ea 100%); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EFEFEF', endColorstr='#1fb9ea', GradientType=0 ); /* IE6-9 */
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
@@ -1644,7 +1662,7 @@ a.instagram:hover {
  margin: -25px 0 0 !important;
 }
  .jumbotron h1 {
- font-size: 90px;
+ font-size: 40px;
  margin: 10px 0;
 }
 .jumbotron h3 {
@@ -1768,11 +1786,11 @@ a.instagram:hover {
 }
 @media only screen and (min-width: 767px) and (max-width: 959px) {
  .jumbotron h1 {
- font-size: 94px;
+ font-size: 40px;
  margin: 10px 0 15px;
 }
 .jumbotron h3 {
- font-size: 42px;
+ font-size: 20px;
  line-height: 1;
 }
  .span12 .carouselslider {
@@ -1889,11 +1907,11 @@ a.instagram:hover {
  padding-top: 165px;
 }
  .jumbotron h1 {
- font-size: 62px;
+ font-size: 30px;
  margin: 10px 0 15px;
 }
 .jumbotron h3 {
- font-size: 32px;
+ font-size: 14px;
  line-height: 1;
 }
 .hero-unit > h1 {

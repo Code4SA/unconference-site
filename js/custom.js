@@ -108,7 +108,7 @@ $(document).ready(function () {
 	
 	// Countdown //
 	$('#countdown').countdown({
-		until: new Date(2014, 10 - 1, 9), // new Date(year, mth - 1, day, hr, min, sec) - date/time to count down to 
+		until: new Date(2014, 6 - 1, 24), // new Date(year, mth - 1, day, hr, min, sec) - date/time to count down to 
 		// or numeric for seconds offset, or string for unit offset(s): 
 		// 'Y' years, 'O' months, 'W' weeks, 'D' days, 'H' hours, 'M' minutes, 'S' seconds 
 		// until: '-1m +1d', for demo
@@ -182,7 +182,7 @@ $(document).ready(function () {
 	
 	// Google Map //
 	$('#map_canvas').gmap({
-		'center': new google.maps.LatLng(40.77288, -73.98299), // Change this to your desired latitude and longitude
+		'center': new google.maps.LatLng(-33.9287, 18.424080000000004), // Change this to your desired latitude and longitude
 		'zoom': 17,
 		'mapTypeControl': false,
 		'navigationControl': false,
@@ -191,7 +191,7 @@ $(document).ready(function () {
 			stylers: [{
 				gamma: 0.60
 			}, {
-				hue: "#5DBEB2"
+				hue: "#1fb9ea"
 			}, {
 				invert_lightness: false
 			}, {
@@ -215,7 +215,7 @@ $(document).ready(function () {
 	$('#map_canvas').gmap().bind('init', function () {
 		$('#map_canvas').gmap('addMarker', {
 			'id': 'marker-1',
-			'position': '40.77288,-73.98299',
+			'position': '-33.9287, 18.424080000000004',
 			'bounds': false,
 			'icon': image
 		}).click(function () {
