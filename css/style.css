@@ -424,7 +424,9 @@ nav select {
 	padding: 60px 0;
 }
 #why {
-	background: #1fc0ed;
+	background: #333;
+}
+
 }
 #schedule {
 	background: #E7EBED;
@@ -536,7 +538,7 @@ hr.divider-short {
 }
 .module-header h4 {
 	background-color: rgba(0, 0, 0, 0);
-	color: #ff0054;
+	color: #1FB9EA;
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 700 !important;
@@ -586,7 +588,7 @@ hr.divider-short {
 }
 .hero-unit > h1, .hero-unit > h2 {
 	letter-spacing: 0;
-	line-height: 1;
+	line-height: 1.1;
 	margin: 0 0 20px;
 }
 .hero-unit > h2 {
@@ -618,7 +620,8 @@ hr.divider-short {
 	color: #ffffff;
 }
 
-.white a {color: #ff0054;}
+.white a {color: #FF0054;
+font-weight: bold;}
 /* Icon Containers */
 .icon-wrap {
 	background: none repeat scroll 0 0 #FFFFFF;
@@ -854,11 +857,6 @@ a.instagram:hover {
 	line-height: 1.1;
 	text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
-
-.jumbotron .sub-heading {
-    font-weight: bold;
-}
-
 .jumbotron .info {
 	margin: 30px auto 0;
 	-webkit-box-sizing:border-box;
