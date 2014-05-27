@@ -54,6 +54,7 @@ sup {
 
 .highlight-blue {color: #1fb9ea;}
 .highlight-red {color: #ff0054;}
+.strong { font-weight: bold; font-size:1.2em }
 /* Buttons */
 .btn {
 	border: none;
