@@ -214,13 +214,13 @@ $(document).ready(function () {
 	};
 	$('#map_canvas').gmap().bind('init', function () {
 		$('#map_canvas').gmap('addMarker', {
-			'id': 'marker-1',
-			'position': '-33.9287, 18.424080000000004',
+			'id': 'marker-1', 
+			'position': '-33.935122, 18.456849',
 			'bounds': false,
 			'icon': image
 		}).click(function () {
 			$('#map_canvas').gmap('openInfoWindow', {
-				'content': '<h4>Eventify</h4><p><strong>Downtown Conference Center</strong><br>Columbus Ave. New York, NY 10019 </p>'
+				'content': '<h4>Upper East Side Conference Center</h4><p>1 Brickfield Road, Woodstock</p>'
 			}, this);
 		});
 	});
